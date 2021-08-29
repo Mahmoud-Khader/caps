@@ -24,7 +24,7 @@ https://github.com/Mahmoud-Khader/caps/pull/1
 
 ### console output :
 
-![](images/capsConsole)
+![](images/capsConsole.PNG)
 
 ### Run tests with :
  * ### npm run test
