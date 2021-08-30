@@ -8,7 +8,7 @@ https://github.com/Mahmoud-Khader/caps/actions
 
 
 * ### pull request :
-https://github.com/Mahmoud-Khader/caps/pull/1
+https://github.com/Mahmoud-Khader/caps/pull/2
 
 ## Setup 
 ### .env requirements :
