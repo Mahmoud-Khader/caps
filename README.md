@@ -21,10 +21,12 @@ https://github.com/Mahmoud-Khader/caps/pull/1
 * ### npm i -D jest supertest 
 * ### npm i faker 
 * ### npm i uuid
+* ### npm i socket.io
+* ### npm i socket.io-clint
 
 ### console output :
 
-![](images/capsConsole.PNG)
+![](images/Socket-ioConsole.PNG)
 
 ### Run tests with :
  * ### npm run test
