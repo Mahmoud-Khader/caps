@@ -1,26 +1,21 @@
 'use strict';
 
-const events = require('../events');
-require('../modules/vendor')
-events.on('InTransit',Intransit)
+const io = require('socket.io-client');
+const host = 'http://localhost:3000/caps';
+const capsConnection=io.connect(host);
 
-function Intransit(payload){
+capsConnection.on('pickup',pickedUp);
 
-    let order={
-        event:'InTransit',
-        time:new Date(),
-        payload
-    }
-    console.log('Event', order)
-    
-setTimeout(()=>{
-    console.log('Driver: picked up ',payload['orderID']);
-   
-},1000)
+function pickedUp(payload) {
+    setInterval(()=>{
+        console.log('Driver : picked up');
+        capsConnection.emit('pick',payload);
+        capsConnection.emit('InTransit',payload)
+    },3000);
 
-setTimeout(()=>{
-    console.log('Delivered');
-    events.emit('delivered',payload)
-},3000)
-    
+    setInterval(()=>{
+        console.log('Driver : Delivered ',payload['orderID']);
+        capsConnection.emit('delivered',payload);
+
+    },3000);
 }
