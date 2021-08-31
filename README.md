@@ -8,7 +8,7 @@ https://github.com/Mahmoud-Khader/caps/actions
 
 
 * ### pull request :
-https://github.com/Mahmoud-Khader/caps/pull/1
+https://github.com/Mahmoud-Khader/caps/pull/3
 
 ## Setup 
 ### .env requirements :
@@ -26,7 +26,7 @@ https://github.com/Mahmoud-Khader/caps/pull/1
 
 ### console output :
 
-![](images/Socket-ioConsole.PNG)
+![](images/queueConsole.PNG)
 
 ### Run tests with :
  * ### npm run test
